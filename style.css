@@ -3,9 +3,18 @@ font-family: 'Roboto', sans-serif; */
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  position: relative;
+  left: 10px;
+  top: 5px;
 }
 h2 {
   font-family: 'Baloo Bhaijaan', cursive;
   font-weight: 400;
   font-size: 15px;
+  position: relative;
+  left: 15px;
+}
+a.redirect {
+  position: relative;
+  left: 15px;
 }
