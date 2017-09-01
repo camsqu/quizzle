@@ -45,3 +45,12 @@ div.page-bg {
 a {
   text-decoration: none;
 }
+p {
+  position: relative;
+  left: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+p.q1:hover {
+  color: blue;
+}
