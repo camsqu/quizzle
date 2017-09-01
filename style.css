@@ -13,12 +13,21 @@ h2 {
   font-size: 15px;
   position: relative;
   left: 15px;
+  bottom: 20px;
   color: white;
 }
 a.redirect {
   position: relative;
+  font-family: 'Roboto', sans-serif;
   left: 15px;
   color: white;
+}
+@keyframes change {
+from {color: white;}
+  to {color: blue;}
+}
+a.redirect:hover {
+  color: blue;
 }
 div.page-bg {
   background: url("https://images.alphacoders.com/306/thumb-1920-306133.jpg");
@@ -32,4 +41,7 @@ div.page-bg {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+a {
+  text-decoration: none;
 }
