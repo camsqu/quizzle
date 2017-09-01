@@ -5,6 +5,7 @@ h1 {
   font-weight: 300;
   position: relative;
   left: 10px;
+  color: white;
 }
 h2 {
   font-family: 'Baloo Bhaijaan', cursive;
@@ -12,10 +13,12 @@ h2 {
   font-size: 15px;
   position: relative;
   left: 15px;
+  color: white;
 }
 a.redirect {
   position: relative;
   left: 15px;
+  color: white;
 }
 div.page-bg {
   background: url("https://images.alphacoders.com/306/thumb-1920-306133.jpg");
