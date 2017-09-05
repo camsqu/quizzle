@@ -1,5 +1,5 @@
 $(document).ready({
-  $("p").click(function() {
-    $(q1)
+  $("q1").click(function() {
+    $("#govquiz").show({position: 'relative';})
   })
 });

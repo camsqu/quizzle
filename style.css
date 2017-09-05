@@ -45,12 +45,16 @@ div.page-bg {
 a {
   text-decoration: none;
 }
-p {
+button {
   position: relative;
-  left: 15px;
+  left: -150px;
+  top: 40px;
   color: white;
   font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  font-size: 18px;
 }
-p.q1:hover {
+button.q1:hover {
   color: blue;
 }
