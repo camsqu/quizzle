@@ -1,9 +1,8 @@
-$(document).ready({
+$(document).ready(function(){
   $("#q1").click(function() {
-    $("#govquiz1").show
-  })
+    $("#govquiz1").show();
+  });
   $("#q1a").click(function () {
-    $("#govquiz1").hide
-    $("#govans1").show
-  })
+    $("#gov1a").show();
+  });
 });
