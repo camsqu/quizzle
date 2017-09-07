@@ -66,6 +66,23 @@ button.q1a {
   background: none;
   font-size: 18px;
 }
+button.q2a {
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+button.next1 {
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  font-size: 18px;
+  display: none;
+}
 div.govquiz {
   position: relative;
   display: none;
