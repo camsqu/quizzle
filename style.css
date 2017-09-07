@@ -1,5 +1,6 @@
 /* font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif; */
+font-family: 'Roboto', sans-serif;
+font-family: 'Baloo Bhaijaan', cursive; */
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -7,6 +8,27 @@ h1 {
   left: 10px;
   color: white;
 }
+@keyframes change {
+ from {left: -500px;}
+ to {left:15px;}
+ }
+ @keyframes blur {
+   0% {-webkit-filter: blur(0px);
+   -moz-filter: blur(0px);
+   -o-filter: blur(0px);
+   -ms-filter: blur(0px);
+   filter: blur(0px);}
+   50% {-webkit-filter: blur(2px);
+   -moz-filter: blur(2px);
+   -o-filter: blur(2px);
+   -ms-filter: blur(2px);
+   filter: blur(2px);}
+   100% {-webkit-filter: blur(5px);
+   -moz-filter: blur(5px);
+   -o-filter: blur(5px);
+   -ms-filter: blur(5px);
+   filter: blur(5px);}
+ }
 h2 {
   font-family: 'Baloo Bhaijaan', cursive;
   font-weight: 400;
@@ -15,16 +37,14 @@ h2 {
   left: 15px;
   bottom: 20px;
   color: white;
+  animation-name: change;
+  animation-duration: 3s;
 }
 a.redirect {
   position: relative;
   font-family: 'Roboto', sans-serif;
   left: 15px;
   color: white;
-}
-@keyframes change {
-from {color: white;}
-  to {color: blue;}
 }
 a.redirect:hover {
   color: blue;
@@ -36,6 +56,8 @@ div.page-bg {
   height: 100%;
   top: 0;
   left: 0;
+  animation-name: blur;
+  animation-duration: 3s;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -84,6 +106,10 @@ button.q3a {
   font-size: 18px;
   display: none;
 }
+@keyframes slide {
+  from {top: -35px;}
+  to {top: 0px;}
+}
 button.next1 {
   position: relative;
   color: white;
@@ -92,6 +118,8 @@ button.next1 {
   background: none;
   font-size: 18px;
   display: none;
+  animation-name: slide;
+  animation-duration: 2s;
 }
 button.next2 {
   position: relative;
@@ -101,6 +129,8 @@ button.next2 {
   background: none;
   font-size: 18px;
   display: none;
+  animation-name: slide;
+  animation-duration: 2s;
 }
 button.finish {
   position: relative;
@@ -110,6 +140,8 @@ button.finish {
   background: none;
   font-size: 18px;
   display: none;
+  animation-name: slide;
+  animation-duration: 2s;
 }
 div.govquiz {
   position: relative;

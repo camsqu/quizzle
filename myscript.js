@@ -1,6 +1,10 @@
 $(document).ready(function(){
   $("#q1").click(function() {
     $("#govquiz").show();
+    $("#gov3").hide();
+    $("#gov3a").hide();
+    $("#gov1").show();
+    $("#q1a").show();
   });
   $("#q1a").click(function () {
     $("#gov1a").show();
