@@ -29,6 +29,11 @@ h1 {
    -ms-filter: blur(5px);
    filter: blur(5px);}
  }
+ button:hover {
+   color: blue;
+   animation-name: fade;
+   animation-duration: 1s;
+ }
 h2 {
   font-family: 'Baloo Bhaijaan', cursive;
   font-weight: 400;
@@ -48,6 +53,8 @@ a.redirect {
 }
 a.redirect:hover {
   color: blue;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 div.page-bg {
   background: url("https://images.alphacoders.com/306/thumb-1920-306133.jpg");
@@ -67,18 +74,29 @@ div.page-bg {
 a {
   text-decoration: none;
 }
+@keyframes fade {
+  from {color: white;}
+  to {color: blue;}
+}
+@keyframes fadeout {
+  from {color: blue;}
+  to {color: white;}
+}
 button.q1 {
   position: relative;
   left: -150px;
-  top: 40px;
+  top: 60px;
   color: white;
   font-family: 'Roboto', sans-serif;
   border: none;
   background: none;
-  font-size: 18px;
+  font-size: 38px;
+  animation-name: fadeout;
+  animation-duration: 1s;
 }
-button:hover {
-  color: blue;
+button.q1:hover {
+  animation-name: fade;
+  animation-duration: 1s;
 }
 button.q1a {
   position: relative;
@@ -87,6 +105,9 @@ button.q1a {
   border: none;
   background: none;
   font-size: 18px;
+}
+button.q1a:hover {
+  color: blue;
 }
 button.q2a {
   position: relative;
@@ -142,6 +163,7 @@ button.finish {
   display: none;
   animation-name: slide;
   animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 div.govquiz {
   position: relative;
