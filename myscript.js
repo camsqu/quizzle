@@ -12,10 +12,27 @@ $(document).ready(function(){
     $("#gov1").hide();
     $("#gov1a").hide();
     $("#gov2").show();
+    $("#q2a").show();
   });
   $("#q2a").click(function () {
     $("#gov2a").show();
     $("#q2a").hide();
     $("#next2").show();
+  });
+  $("#next2").click(function() {
+    $("#next2").hide();
+    $("#gov2").hide();
+    $("#gov2a").hide();
+    $("#gov3").show();
+    $("#q3a").show();
+  });
+  $("#q3a").click(function () {
+    $("#gov3a").show();
+    $("#q3a").hide();
+    $("#finish").show();
+  });
+  $("#finish").click(function () {
+    $("#gov3a").hide();
+    $("#finish").hide();
   });
 });

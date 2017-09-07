@@ -73,8 +73,36 @@ button.q2a {
   border: none;
   background: none;
   font-size: 18px;
+  display: none;
+}
+button.q3a {
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  font-size: 18px;
+  display: none;
 }
 button.next1 {
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  font-size: 18px;
+  display: none;
+}
+button.next2 {
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  font-size: 18px;
+  display: none;
+}
+button.finish {
   position: relative;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -87,10 +115,23 @@ div.govquiz {
   position: relative;
   display: none;
   font-family: 'Open Sans', sans-serif;
+  color: white;
   top: 70px;
   left: 15px;
 }
-p.gov1a{
+p.gov1a {
   position: relative;
+  display: none;
+}
+p.gov2 {
+  display: none;
+}
+p.gov3 {
+  display: none;
+}
+p.gov2a {
+  display: none;
+}
+p.gov3a {
   display: none;
 }
