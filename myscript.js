@@ -32,7 +32,7 @@ $(document).ready(function(){
     $("#finish").show();
   });
   $("#finish").click(function () {
-    $("#gov3a").hide();
+    $("#govquiz").hide();
     $("#finish").hide();
   });
 });
