@@ -1,0 +1,19 @@
+
+{% extends "layout.html" %}
+{% block title %}Page 3{% endblock %}
+
+{% block question %}
+  <h1>Page 1: Gov or what??</h1>
+
+ <form action={{ url_for("renderPage2") }}  method = "POST">
+      <p id="gov3" class="gov3">3)What year was the United States founded?</p>
+      <button id="q3a" class="q3a">Show Answer</button>
+      <p id="gov3a" class="gov3a">1776</p>
+      <button id="finish" class="finish">Finish Quiz</button>
+           
+ </form>
+
+{% endblock %}
+      </body>
+
+</html>
