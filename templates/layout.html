@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quizzle - The ultimate knock off</title>
+    <title>Quizzle - {% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Open+Sans:300,400|Roboto:300,400" rel="stylesheet">
@@ -14,6 +14,8 @@
     <h2>why use quizlet when you can use a beta of nothing?</h2>
     <a class="redirect" href="https://quizlet.com"><strong>Take real quizzes here</strong></a>
     <button id="q1" class="q1"><strong>American Government Quiz</strong></button>
+    <!--Page Content/Question-->
+    {% block question %}{% endblock %}
     <div id="govquiz" class="govquiz">
       <p id="gov1" class="gov1">1) How many U.S. presidents have there been?</p>
       <button id="q1a" class="q1a">Show Answer</button>
