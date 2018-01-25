@@ -10,25 +10,13 @@
   </head>
   <body>
     <div class="page-bg"></div>
-    <a href="index.html"><h1 class="animated fadeInLeft">Quizzle</h1></a>
+    <a href="layout.html"><h1 class="animated fadeInLeft">Quizzle</h1></a>
     <h2>why use quizlet when you can use a beta of nothing?</h2>
     <a class="redirect" href="https://quizlet.com"><strong>Take real quizzes here</strong></a>
     <button id="q1" class="q1"><strong>American Government Quiz</strong></button>
     <!--Page Content/Question-->
     {% block question %}{% endblock %}
-    <div id="govquiz" class="govquiz">
-      <p id="gov1" class="gov1">1) How many U.S. presidents have there been?</p>
-      <button id="q1a" class="q1a">Show Answer</button>
-      <p id="gov1a" class="gov1a">45</p>
-      <button id="next1" class="next1">Next Question</button>
-      <p id="gov2" class="gov2">2)What type of government is the United States?</p>
-      <button id="q2a" class="q2a">Show Answer</button>
-      <p id="gov2a" class="gov2a">Federal Government - power split between central and local governments.</p>
-      <button id="next2" class="next2">Next Question</button>
-      <p id="gov3" class="gov3">3)What year was the United States founded?</p>
-      <button id="q3a" class="q3a">Show Answer</button>
-      <p id="gov3a" class="gov3a">1776</p>
-      <button id="finish" class="finish">Finish Quiz</button>
+    {% block score %}{% endblock %}
 </div>
   </body>
 </html>
