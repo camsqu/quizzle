@@ -30,7 +30,7 @@ def renderPage1():
 def startOver():
     #clear variable values and create a new session
     session.clear()
-    return redirect(url_for('renderMain'))
+    return render_template('page1.html')
 # @app.route('/page2',methods=['GET','POST'])
 # def renderPage2():
     #set the first and last name in the session
@@ -49,6 +49,6 @@ def get_score(answers):
     for a in answers:
         if a == "yes":
             score += 100
-    return score
+    return "Score: " + score
 if __name__=="__main__":
     app.run(debug=False)
