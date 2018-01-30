@@ -24,9 +24,6 @@ def startOver():
 
 @app.route('/quiz', methods=['GET','POST'])
 def renderPage1():
-    session["q1"] = request.form["q1"]
-    session["q2"] = request.form["q2"]
-    session["q3"] = request.form["q3"]
     return render_template('page1.html')
 
 @app.route('/checkScore')
@@ -47,15 +44,11 @@ def startOver():
     # session["favoriteColor"] = request.form["favoriteColor"]
     # return render_template('page3.html')
 
-    def get_score(answers):
+def get_score(answers):
     score = 0
     for a in answers:
-        if "" in answers:
+        if a == "yes":
             score += 100
-        if "" in answers:
-            score += 100
-        if "" in answers:
-            score += 100
-        return score
+    return score
 if __name__=="__main__":
     app.run(debug=False)
