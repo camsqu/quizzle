@@ -34,7 +34,7 @@ def checkScore():
     session["q2"] = request.form["q2"]
     session["q3"] = request.form["q3"]
     answers = [request.form["q1"], request.form["q2"], request.form["q3"]]
-    return render_template('page1.html' yourScore = get_score(answers))
+    return render_template('page1.html' , yourScore = get_score(answers))
 # @app.route('/page2',methods=['GET','POST'])
 # def renderPage2():
     #set the first and last name in the session
