@@ -33,7 +33,7 @@ def renderPage1():
 def startOver():
     #clear variable values and create a new session
     session.clear()
-    return render_template('page1.html')
+    return render_template('page1.html' yourScore = get_score(answers))
 # @app.route('/page2',methods=['GET','POST'])
 # def renderPage2():
     #set the first and last name in the session
