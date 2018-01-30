@@ -24,6 +24,9 @@ def startOver():
 
 @app.route('/quiz', methods=['GET','POST'])
 def renderPage1():
+    session["q1"] = request.form["q1"]
+    session["q2"] = request.form["q2"]
+    session["q3"] = request.form["q3"]
     return render_template('page1.html')
 
 @app.route('/checkScore')
