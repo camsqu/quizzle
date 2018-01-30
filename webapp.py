@@ -24,9 +24,13 @@ def startOver():
 
 @app.route('/quiz', methods=['GET','POST'])
 def renderPage1():
-
     return render_template('page1.html')
 
+@app.route('/checkScore')
+def startOver():
+    #clear variable values and create a new session
+    session.clear()
+    return redirect(url_for('renderMain'))
 # @app.route('/page2',methods=['GET','POST'])
 # def renderPage2():
     #set the first and last name in the session
@@ -40,5 +44,15 @@ def renderPage1():
     # session["favoriteColor"] = request.form["favoriteColor"]
     # return render_template('page3.html')
 
+    def get_score(answers):
+    score = 0
+    for a in answers:
+        if "" in answers:
+            score += 100
+        if "" in answers:
+            score += 100
+        if "" in answers:
+            score += 100
+        return score
 if __name__=="__main__":
     app.run(debug=False)
