@@ -24,15 +24,15 @@ def startOver():
 
 @app.route('/quiz', methods=['GET','POST'])
 def renderPage1():
-    session["q1"] = request.form["q1"]
-    session["q2"] = request.form["q2"]
-    session["q3"] = request.form["q3"]
     return render_template('page1.html')
 
 @app.route('/checkScore')
 def startOver():
     #clear variable values and create a new session
     session.clear()
+    session["q1"] = request.form["q1"]
+    session["q2"] = request.form["q2"]
+    session["q3"] = request.form["q3"]
     return render_template('page1.html' yourScore = get_score(answers))
 # @app.route('/page2',methods=['GET','POST'])
 # def renderPage2():
