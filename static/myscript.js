@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#finish").click(function () {
-    $("#govquiz").show();
+    $("#govquiz").hide();
     $("#finish").hide();
   });
 });
