@@ -89,7 +89,6 @@ button.finish {
   border: none;
   background: none;
   font-size: 18px;
-  display: none;
   animation-name: slide;
   animation-duration: 2s;
   animation-iteration-count: 1;
