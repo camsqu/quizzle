@@ -54,4 +54,4 @@ def get_score(answers):
             score += 100
     return "Score: " + score
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)
