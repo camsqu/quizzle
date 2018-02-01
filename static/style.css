@@ -8,6 +8,9 @@ h1 {
   left: 10px;
   color: white;
 }
+h3 {
+  position: relative;
+}
 @keyframes change {
  from {left: -500px;}
  to {left:15px;}
@@ -106,7 +109,4 @@ p.gov1a {
 p.gov2a {
 }
 p.gov3a {
-}
-h3 {
-  position: relative;
 }
