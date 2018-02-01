@@ -50,7 +50,7 @@ def checkScore():
 def get_score(answers):
     score = 100
     for a in answers:
-        if a == "yes":
+        if a.value == "yes":
             score += 100
     return "Score: " + score
 if __name__=="__main__":
