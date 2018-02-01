@@ -96,7 +96,6 @@ button.finish {
 }
 div.govquiz {
   position: relative;
-  display: none;
   font-family: 'Open Sans', sans-serif;
   color: white;
   top: 70px;
@@ -104,12 +103,6 @@ div.govquiz {
 }
 p.gov1a {
   position: relative;
-  display: none;
-}
-p.gov2 {
-  display: none;
-}
-p.gov3 {
   display: none;
 }
 p.gov2a {
