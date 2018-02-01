@@ -14,7 +14,7 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 
 @app.route('/')
 def renderMain():
-    return render_template('home.html', yourScore = 0)
+    return render_template('home.html', yourScore = 'Score: 0')
 
 @app.route('/startOver')
 def startOver():
@@ -24,7 +24,7 @@ def startOver():
 
 @app.route('/quiz', methods=['GET','POST'])
 def renderPage1():
-    return render_template('home.html', yourScore = 0)
+    return render_template('home.html', yourScore = 'Score: 0')
 
 @app.route('/checkScore')
 def checkScore():
