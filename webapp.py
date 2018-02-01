@@ -29,7 +29,6 @@ def renderPage1():
 @app.route('/checkScore')
 def checkScore():
     #clear variable values and create a new session
-    session.clear()
     session["q1"] = request.form["q1"]
     session["q2"] = request.form["q2"]
     session["q3"] = request.form["q3"]
