@@ -49,14 +49,12 @@ def checkScore():
 
 def get_score(answers):
     score = 100
+    print(answers)
     if answers[0] == "45":
-      print("this is a check")
       score += 100
     if answers[2] == "1776":
-      print("this is a check")
       score += 100
     if answers[1] == "Federal Government":
-      print("this is a check")
       score += 100
     return "Score: " + str(score)
 if __name__=="__main__":
