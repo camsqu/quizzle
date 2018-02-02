@@ -18,6 +18,7 @@
     <a class="redirect" href="https://quizlet.com"><strong>Take real quizzes here</strong></a>
     <button id="q1" class="q1"><strong>American Government Quiz</strong></button>
     <!--Page Content/Question-->
+    <form action={{ url_for("checkScore") }} method = "POST" >
      <div id="govquiz" class="govquiz">
      <p id="gov1" class="gov1">1) How many U.S. presidents have there been?</p>
      <input type="radio" id="q1a1"
@@ -63,6 +64,7 @@
      name="q3" value="no">
     <label for="q1a4">None of the Above </label>
      <p id="gov3a" class="gov3a" hidden="true">1776</p>
+       </form>
      <button id="finish" href="/checkScore" class="finish">Finish Quiz</button>
 </div>
   </body>
