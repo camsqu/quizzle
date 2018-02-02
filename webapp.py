@@ -50,7 +50,13 @@ def checkScore():
 def get_score(answers):
     score = 100
     for a in answers:
-      if a.value == "yes":
+      if a == "45":
+        print("this is a check")
+        score += 100
+      if a == "1776":
+        print("this is a check")
+        score += 100
+      if a == "Federal Government":
         print("this is a check")
         score += 100
       return "Score: " + str(score)
