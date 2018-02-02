@@ -52,9 +52,9 @@ def get_score(answers):
     print(answers)
     if answers[0] == "yes":
       score += 100
-    if answers[2] == "yes":
-      score += 100
     if answers[1] == "yes":
+      score += 100
+    if answers[2] == "yes":
       score += 100
     return "Score: " + str(score)
 if __name__=="__main__":
