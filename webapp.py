@@ -26,7 +26,7 @@ def startOver():
 def renderPage1():
     return render_template('home.html', yourScore = "Score: 0")
 
-@app.route('/checkScore')
+@app.route('/checkScore', methods=['GET','POST'])
 def checkScore():
     #clear variable values and create a new session
     session["q1"] = request.form["q1"]
