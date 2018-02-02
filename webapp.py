@@ -53,6 +53,6 @@ def get_score(answers):
     for a in answers:
       if a == "yes":
         score += 100
-      return "Score: " + score
+      return "Score: " + str(score)
 if __name__=="__main__":
     app.run(debug=True)
