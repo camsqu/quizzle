@@ -48,10 +48,10 @@ def checkScore():
     # return render_template('page3.html')
 
 def get_score(answers):
-    print("this is a check")
     score = 100
     for a in answers:
-      if a == "yes":
+      if a.value == "yes":
+        print("this is a check")
         score += 100
       return "Score: " + str(score)
 if __name__=="__main__":
