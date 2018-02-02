@@ -48,7 +48,7 @@ def checkScore():
     # return render_template('page3.html')
 
 def get_score(answers):
-    score = 100
+    score = 0
     print(answers)
     if answers[0] == "yes":
       score += 100
