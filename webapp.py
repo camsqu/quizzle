@@ -50,11 +50,11 @@ def checkScore():
 def get_score(answers):
     score = 100
     print(answers)
-    if answers[0] == "45":
+    if answers[0] == "yes":
       score += 100
-    if answers[2] == "1776":
+    if answers[2] == "yes":
       score += 100
-    if answers[1] == "Federal Government":
+    if answers[1] == "yes":
       score += 100
     return "Score: " + str(score)
 if __name__=="__main__":
